@@ -7,5 +7,8 @@ write_handler.close
 read = File.read("my.txt")
 puts "Data from file: " + read
 
-
+f = File.new("my.txt", "r")
+f.each do |line|
+  puts "read line #{line}"
+end
 
