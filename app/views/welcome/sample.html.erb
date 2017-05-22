@@ -1,2 +1,8 @@
 <h1>Sample</h1>
 <p>Route example</p>
+<%= "message from controller:
+  #{@controller_message}"%>
+
+<%= link_to("Go to index",
+            {:controller => 'welcome',
+             :action => 'index', :id => 5, :random => "ololo"}) %>
